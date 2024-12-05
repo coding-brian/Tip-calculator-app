@@ -50,7 +50,25 @@ const buttons = ref([
           </div>
         </div>
       </div>
-      <div class="result"></div>
+      <div class="result">
+        <div>
+          <div class="column">
+            <div class="discription">
+              <span class="title">Tip Amount</span>
+              <span class="unit">/ person</span>
+            </div>
+            <span>$0.00</span>
+          </div>
+          <div class="column">
+            <div class="discription">
+              <span class="title">Total</span>
+              <span class="unit">/ person</span>
+            </div>
+            <span>$0.00</span>
+          </div>
+        </div>
+        <button type="button">RESET</button>
+      </div>
     </div>
   </main>
 </template>

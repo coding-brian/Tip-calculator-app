@@ -1,5 +1,10 @@
 @import './base.css';
 
+* {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
 body {
   background-color: var(--light-grayish-cyan);
   display: flex;
@@ -7,8 +12,6 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  font-family: 'Space Mono', monospace;
-  font-weight: 700;
 }
 
 main {
@@ -19,8 +22,6 @@ main {
 span,
 input[type='text'] {
   font-size: 24px;
-  font-family: 'Space Mono', monospace;
-  font-weight: 700;
 }
 
 .image-container {
@@ -33,7 +34,6 @@ input[type='text'] {
 .container {
   display: flex;
   border-radius: 25px;
-
   background-color: white;
   padding: 32px 32px 32px 48px;
 }
@@ -74,12 +74,60 @@ img {
   background-color: var(--light-cyan);
 }
 
+/* result */
+.result {
+  background-color: var(--very-dark-cyan);
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column > span {
+  font-size: 48px;
+  color: var(--strong-cyan);
+}
+
+.discription {
+  margin-right: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.discription .title {
+  color: white;
+  font-size: 16px;
+}
+
+.discription .unit {
+  color: var(--weldon-blue);
+  font-size: 13px;
+}
+
+.result button {
+  width: 100%;
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  border-radius: 5px;
+  border: 0px;
+  height: 48px;
+  font-size: 20px;
+}
+
 /* input */
 .button-input {
   background-color: var(--very-dark-cyan);
   color: white;
   border-radius: 5px;
   border: 0px;
+  font-size: 24px;
 }
 
 .button-input:hover {
