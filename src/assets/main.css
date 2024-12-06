@@ -19,6 +19,10 @@ main {
   flex-direction: column;
 }
 
+button {
+  cursor: pointer;
+}
+
 span,
 input[type='text'] {
   font-size: 24px;
@@ -121,6 +125,15 @@ img {
   font-size: 20px;
 }
 
+.result button:hover {
+  background-color: var(--light-cyan);
+}
+
+.result button.disable {
+  background-color: var(--skobeloff);
+  cursor: not-allowed;
+}
+
 /* input */
 .button-input {
   background-color: var(--very-dark-cyan);
@@ -152,6 +165,7 @@ img {
 }
 
 .input-title {
+  font-size: 16px;
   color: var(--very-dark-cyan);
 }
 
@@ -170,6 +184,13 @@ img {
   color: var(--very-dark-cyan);
 }
 
+.input-field > .input.error {
+  flex-grow: 1;
+  caret-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  border: 2px var(--burnt-sienna) solid;
+}
+
 .input.focus {
   border: 2px var(--strong-cyan) solid;
 }
@@ -179,4 +200,9 @@ img {
   background: none; /* 移除背景 */
   outline: none;
   text-align: right;
+}
+
+.error-message {
+  font-size: 16px;
+  color: var(--terra-cotta);
 }
