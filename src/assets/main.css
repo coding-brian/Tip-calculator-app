@@ -53,6 +53,16 @@ img {
   gap: 40px;
 }
 
+.tip {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tip > span {
+  color: var(--wintergreen-dream);
+}
+
 .select-tip {
   display: grid;
   grid-template-columns: 7.3125rem 7.3125rem 7.3125rem;
@@ -166,7 +176,7 @@ img {
 
 .input-title {
   font-size: 16px;
-  color: var(--very-dark-cyan);
+  color: var(--wintergreen-dream);
 }
 
 .input-field > .input {
